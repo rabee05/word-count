@@ -28,16 +28,16 @@ This is a command-line interface (CLI) tool that counts the occurrences of each 
 # Examples
 Count the words in a file and show the list of words with the highest count:
 ```
-node app.js -f input.txt
+$ node app.js -f input.txt
 ```
 
 Count the words in a file and write the output to a file:
 ```
-node index.js -f sample.txt -o somename
+$ node app.js -f sample.txt -o somename
 ```
 Count the words in a large file using a stream:
 ```
-node index.js -f sample.txt -o somename -s
+$ node app.js -f sample.txt -o somename -s
 ```
 
 # Configuration Options
@@ -55,11 +55,11 @@ module.exports = {
 # Running Unit Tests
 This project includes unit tests for the wordsCount and maxCount functions. To run the tests, first make sure you have Jest installed:
 ```
-npm install --save-dev jest
+$ npm install --save-dev jest
 
 ```
 Then, run the tests using the following command:
 ```
-npm test
+$ npm test
 ```
 
