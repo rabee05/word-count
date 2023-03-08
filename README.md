@@ -33,11 +33,11 @@ node app.js -f input.txt
 
 Count the words in a file and write the output to a file:
 ```
-node index.js -f sample.txt -o somename
+node app.js -f sample.txt -o somename
 ```
 Count the words in a large file using a stream:
 ```
-node index.js -f sample.txt -o somename -s
+node app.js -f sample.txt -o somename -s
 ```
 
 # Configuration Options
