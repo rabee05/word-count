@@ -60,6 +60,6 @@ $ npm install --save-dev jest
 ```
 Then, run the tests using the following command:
 ```
-$ npm test
+$ npm run test
 ```
 
