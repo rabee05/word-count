@@ -35,9 +35,18 @@ const { file: inputFile, write: outputFile, stream } = options;
 
 const main = async () => {
     try {
+        console.time('File Reader:');
         const { fileContent, fileSizeInBytes } = await reader(inputFile);
+        console.timeEnd('File Reader:');
+
+        console.time('Word Counter:');
         listOfWords = stream | (fileSizeInBytes > availableMemory / 2) ? await streamer(inputFile) : await wordsCount(fileContent);
+        console.timeEnd('Word Counter:');
+
+        console.time('wordsWithMaxCount:');
         const { wordsWithMaxCount, highestCount } = maxCount(listOfWords);
+        console.timeEnd('wordsWithMaxCount:');
+
         const finalList = { ...listOfWords, highestWords: { wordsWithMaxCount, highestCount } };
 
         const outputSize = Object.keys(listOfWords).length;
