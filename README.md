@@ -8,8 +8,8 @@ This is a command-line interface (CLI) tool that counts the occurrences of each 
 * Option to read files as a stream to optimize memory usage.
  
 # Installation
-* Clone the repository.
-* Install the dependencies using npm install.
+* Clone the repository. By running "git clone https://github.com/rabee05/word-count.git"
+* Install the dependencies by running  "npm install" or "npm i". 
 
 # Usage
 
